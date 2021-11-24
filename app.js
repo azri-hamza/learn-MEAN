@@ -38,5 +38,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-// export app
+// export app (just for test pupose, another change)
 module.exports = app;
