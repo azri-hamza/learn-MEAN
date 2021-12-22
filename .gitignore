@@ -62,3 +62,6 @@ typings/
 
 # prettier file config
 .prettierrc.json
+
+# mongodb folder
+database

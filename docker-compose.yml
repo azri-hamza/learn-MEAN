@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+    mongodb:
+        image: mongo:4.0.4-xenial
+        container_name: mongodb
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: root
+            MONGO_INITDB_ROOT_PASSWORD: example
+        volumes:
+            - mongo-database-loc8tor:/data/db
+        ports:
+            - 27017:27017
+        command: mongod --smallfiles  --logpath=/dev/null
+        # restart: unless-stopped
+volumes:
+    mongo-database-loc8tor:
+    # express:
+    #     build: .
+    #     ports:
+    #         - 3000:3000
