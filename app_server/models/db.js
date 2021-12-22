@@ -54,4 +54,5 @@ const locationSchema = new mongoose.schema({
     },
 });
 
+// add index to mangodb
 locationSchema.index({ coords: '2dshpere' });
